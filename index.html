@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+</head>
+
+<body>
+
+<div class="container w-50 bg-danger text-center mt-5 p-5">
+    <h1 class="text-white mb-3">GREATEST NUMBER</h1>
+    <form>
+        <input id="ip1" class="form-control mb-3" type="text" placeholder="FIRST NUMBER">
+
+        <input id="ip2" class="form-control" type="text" placeholder="SECOND NUMBER">
+
+        <button type="submit" onclick="numCheck()" class="btn mt-3 btn-outline-light">Submit</button>
+    </form>
+</div>
+
+</body>
+<script>
+function numCheck(){
+    // age=document.querySelector('#ip').value
+    num1=ip1.value
+    num2=ip2.value
+    if(num1>num2){
+        alert(`Greatest number is ${num1}`)
+    }
+    else if(num1==num2){
+        alert(`both numbers are same`)
+
+    }
+    else{
+        alert(`Greatest number is ${num2}`)
+    }
+}
+</script>
+
+</html>
